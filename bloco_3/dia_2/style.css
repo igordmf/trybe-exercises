@@ -1,0 +1,41 @@
+h1 {
+  color: orange;
+  height: 65px;
+  font-family: sans-serif;
+}
+
+ul {
+  background-color: rgb(13, 0, 197);
+  width: 100px;
+}
+
+p {
+  font-size: 3em;
+}
+
+body {
+  font-size: 16px;
+}
+
+.list {
+  background-color: springgreen;
+}
+
+.list-style {
+  font-style: italic;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: dashed;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#red {
+  background-color: red;
+}
+
+#brown {
+  background-color: brown;
+}
