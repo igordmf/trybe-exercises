@@ -153,24 +153,62 @@
 // }
 
 // ***-Exercicio 5-***
-let angulo1 = 61;
-let angulo2 = 60;
-let angulo3 = 59;
-let somaAngulos = angulo1 + angulo2 + angulo3;
+// let angulo1 = 61;
+// let angulo2 = 60;
+// let angulo3 = 59;
+// let somaAngulos = angulo1 + angulo2 + angulo3;
 
-switch (true) {
-  case (angulo1 < 0 || angulo2 < 0 || angulo3 < 0 ):
-    console.log('Erro');
-    break;
-  case (somaAngulos == 180):
-    console.log(true);
-    break;
-  case (somaAngulos != 180):
-    console.log(false);
-    break;
-}
+// switch (true) {
+//   case (angulo1 < 0 || angulo2 < 0 || angulo3 < 0 ):
+//     console.log('Erro');
+//     break;
+//   case (somaAngulos == 180):
+//     console.log(true);
+//     break;
+//   case (somaAngulos != 180):
+//     console.log(false);
+//     break;
+// }
 
 // ***-Exercicio 6-***
+let pecaXadrez = prompt('Digite uma peça de Xadrez');
+// let pecaXadrez = 'REI'
+pecaXadrez = pecaXadrez.toLowerCase();
+
+function movimentos(pecaXadrez) {
+  switch (pecaXadrez) {
+    case 'rei':
+      console.log('O rei se movimenta para frente, trás e lados, podendo andar apenas uma casa.');
+      return 'O rei se movimenta para frente, trás e lados, podendo andar apenas uma casa.';
+      break;
+    case 'dama':
+      console.log('A dama se movimenta para frente, trás, lados e diagonal, podendo andar várias casas.');
+      return 'A dama se movimenta para frente, trás, lados e diagonal, podendo andar várias casas.';
+      break;
+    case 'cavalo':
+      console.log('O cavalo se movimenta em L.');
+      return 'O cavalo se movimenta em L.';
+      break;
+    case 'bispo':
+      console.log('O bispo se movimenta nas diagonais, podendo andar várias casas.');
+      return 'O bispo se movimenta nas diagonais, podendo andar várias casas.';
+      break;
+    case 'torre':
+      console.log('A torre se movimenta para frente, trás e lados, podendo andar várias casas.');
+      return 'A torre se movimenta para frente, trás e lados, podendo andar várias casas.';
+      break;
+    case 'peao':
+      console.log('O peao se movimenta para frente, trás e lados, podendo andar apenas uma casa.');
+      return 'O peao se movimenta para frente, trás e lados, podendo andar apenas uma casa.';
+      break;
+    default:
+      console.log('Essa peça não existe!');
+      return 'Essa peça não existe!';
+      break;
+  }
+}
+
+document.getElementById("demo").innerHTML = pecaXadrez + ': ' + movimentos(pecaXadrez);
 
 // ***-Exercicio 7-***
 
