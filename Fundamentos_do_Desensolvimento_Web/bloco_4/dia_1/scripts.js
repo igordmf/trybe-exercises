@@ -121,16 +121,18 @@
 // }
 
 // ***-Exercicio 3-***
-let num1 = 7;
-let num2 = 7;
-let num3 = 10;
+let num1 = 3214;
+let num2 = 69;
+let num3 = 53456;
 
-if (num1 > num2) {
+if (num1 > num2 && num1 > num3) {
   console.log('O maior número é o ' + num1);
-} else if (num1 < num2) {
+} else if (num1 < num2 && num3 < num2) {
   console.log('O maior número é o ' + num2);
-} else if (num1 == num2) {
-  console.log('O dois número são iguais');
+} else if (num3 > num1 && num3 > num2) {
+  console.log('O maior número é o ' + num3);
+} else if (num1 == num2 && num1 == num3) {
+  console.log('Os números são iguais!');
 } else {
   console.log('Não é possível verificar!');
 }
