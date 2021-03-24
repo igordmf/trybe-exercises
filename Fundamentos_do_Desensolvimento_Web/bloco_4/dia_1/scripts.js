@@ -121,23 +121,36 @@
 // }
 
 // ***-Exercicio 3-***
-let num1 = 3214;
-let num2 = 69;
-let num3 = 53456;
+// let num1 = 3214;
+// let num2 = 69;
+// let num3 = 53456;
 
-if (num1 > num2 && num1 > num3) {
-  console.log('O maior número é o ' + num1);
-} else if (num1 < num2 && num3 < num2) {
-  console.log('O maior número é o ' + num2);
-} else if (num3 > num1 && num3 > num2) {
-  console.log('O maior número é o ' + num3);
-} else if (num1 == num2 && num1 == num3) {
-  console.log('Os números são iguais!');
-} else {
-  console.log('Não é possível verificar!');
-}
+// if (num1 > num2 && num1 > num3) {
+//   console.log('O maior número é o ' + num1);
+// } else if (num1 < num2 && num3 < num2) {
+//   console.log('O maior número é o ' + num2);
+// } else if (num3 > num1 && num3 > num2) {
+//   console.log('O maior número é o ' + num3);
+// } else if (num1 == num2 && num1 == num3) {
+//   console.log('Os números são iguais!');
+// } else {
+//   console.log('Não é possível verificar!');
+// }
 
 // ***-Exercicio 4-***
+// let valor = 0;
+
+// switch (true) {
+//   case (valor > 0):
+//     console.log('O valor é positivo.');
+//     break;
+//   case (valor < 0):
+//     console.log('O valor é negativo.');
+//     break;
+//   default:
+//     console.log('zero');
+//     break;
+// }
 
 // ***-Exercicio 5-***
 
