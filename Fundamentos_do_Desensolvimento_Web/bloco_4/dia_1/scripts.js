@@ -153,6 +153,22 @@
 // }
 
 // ***-Exercicio 5-***
+let angulo1 = 61;
+let angulo2 = 60;
+let angulo3 = 59;
+let somaAngulos = angulo1 + angulo2 + angulo3;
+
+switch (true) {
+  case (angulo1 < 0 || angulo2 < 0 || angulo3 < 0 ):
+    console.log('Erro');
+    break;
+  case (somaAngulos == 180):
+    console.log(true);
+    break;
+  case (somaAngulos != 180):
+    console.log(false);
+    break;
+}
 
 // ***-Exercicio 6-***
 
