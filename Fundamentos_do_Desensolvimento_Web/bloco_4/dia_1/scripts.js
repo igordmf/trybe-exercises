@@ -212,45 +212,57 @@
 
 // ***-Exercicio 7-***
 // let nota = 70;
-let nota = prompt('Digite sua nota entre 0 e 100.\n');
+// let nota = prompt('Digite sua nota entre 0 e 100.\n');
 
-function conceito(nota) {
-  switch (true) {
-    case (nota <= 100 && nota >= 90):
-      console.log('Sua nota tem conceito A. Parabéns!!');
-      return 'Sua nota tem conceito A. Parabéns!!';
-      break;
-    case (nota < 90 && nota >= 80):
-      console.log('Sua nota tem conceito B. Muito bem!!');
-      return 'Sua nota tem conceito B. Muito bem!!';
-      break;
-    case (nota < 80 && nota >= 70):
-      console.log('Sua nota tem conceito C. Aprovado!!');
-      return 'Sua nota tem conceito C. Aprovado!!';
-      break;
-    case (nota < 70 && nota >= 60):
-      console.log('Sua nota tem conceito D. Estude mais um pouco!!');
-      return 'Sua nota tem conceito D. Estude mais um pouco!!';
-      break;
-    case (nota < 60 && nota >= 50):
-      console.log('Sua nota tem conceito E. Parabéns!!');
-      return 'Sua nota tem conceito E. Parabéns!!';
-      break;
-    case (nota < 50):
-      console.log('Sua nota tem conceito F. Reprovado!!');
-      return 'Sua nota tem conceito F. Reprovado!!';
-      break;
-    default:
-      console.log('Nota inválida!');
-      return 'Nota inválida!';
-      break;
+// function conceito(nota) {
+//   switch (true) {
+//     case (nota <= 100 && nota >= 90):
+//       console.log('Sua nota tem conceito A. Parabéns!!');
+//       return 'Sua nota tem conceito A. Parabéns!!';
+//       break;
+//     case (nota < 90 && nota >= 80):
+//       console.log('Sua nota tem conceito B. Muito bem!!');
+//       return 'Sua nota tem conceito B. Muito bem!!';
+//       break;
+//     case (nota < 80 && nota >= 70):
+//       console.log('Sua nota tem conceito C. Aprovado!!');
+//       return 'Sua nota tem conceito C. Aprovado!!';
+//       break;
+//     case (nota < 70 && nota >= 60):
+//       console.log('Sua nota tem conceito D. Estude mais um pouco!!');
+//       return 'Sua nota tem conceito D. Estude mais um pouco!!';
+//       break;
+//     case (nota < 60 && nota >= 50):
+//       console.log('Sua nota tem conceito E. Parabéns!!');
+//       return 'Sua nota tem conceito E. Parabéns!!';
+//       break;
+//     case (nota < 50):
+//       console.log('Sua nota tem conceito F. Reprovado!!');
+//       return 'Sua nota tem conceito F. Reprovado!!';
+//       break;
+//     default:
+//       console.log('Nota inválida!');
+//       return 'Nota inválida!';
+//       break;
+//   }
+// }
+
+// document.getElementById("demo").innerHTML = nota + ': ' + conceito(nota);
+
+// ***-Exercicio 8-***
+let num1 = 3;
+let num2 = 3;
+let num3 = 5;
+
+function ePar (n1, n2, n3) {
+  if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+    return true;
+  } else {
+    return false;
   }
 }
 
-document.getElementById("demo").innerHTML = nota + ': ' + conceito(nota);
-
-// ***-Exercicio 8-***
-
+console.log(ePar(num1,num2,num3));
 // ***-Exercicio 9-***
 
 // ***-Exercicio 10-***
