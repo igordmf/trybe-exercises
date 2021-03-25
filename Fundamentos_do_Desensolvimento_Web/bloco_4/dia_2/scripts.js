@@ -48,7 +48,7 @@
 // }
 
 //--- Exercicios ---
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //--- Exercicio 1 ---
 // for (index = 0; index < numbers.length; index += 1) {
@@ -73,28 +73,47 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(media);
 
 //--- Exercicio 4 ---
-let soma = 0;
+// let soma = 0;
 
-for (index = 0; index < numbers.length; index += 1) {
-  soma = soma + numbers[index];
-}
+// for (index = 0; index < numbers.length; index += 1) {
+//   soma = soma + numbers[index];
+// }
 
-let media = soma / numbers.length;
+// let media = soma / numbers.length;
 
-switch (true) {
-  case (media > 20):
-    console.log('valor maior que 20');
-    break;
-  default:
-    console.log('valor menor ou igual a 20');
-    break;
-}
+// switch (true) {
+//   case (media > 20):
+//     console.log('valor maior que 20');
+//     break;
+//   default:
+//     console.log('valor menor ou igual a 20');
+//     break;
+// }
 
 //--- Exercicio 5 ---
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// let maiorNumero = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] > maiorNumero) {
+//     maiorNumero = numbers[index];
+//   }
+// }
+
+// console.log(maiorNumero);
 
 //--- Exercicio 6 ---
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 29];
+// let odd = 0;
+// for (index = 0; index < numbers.length; index +=1) {
+//   if (numbers[index] % 2 !== 0) {
+//     odd += 1;
+//   }
+// }
 
+// console.log(odd);
 
 //--- Exercicio 7 ---
 
