@@ -116,9 +116,35 @@
 // console.log(odd);
 
 //--- Exercicio 7 ---
+//Utilizando for , descubra qual o menor valor contido no array e imprima-o;
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// let menorNumero;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] < menorNumero) {
+//     menorNumero = numbers[index];
+//   }
+// }
+
+// console.log(menorNumero);
 
 //--- Exercicio 8 ---
+//Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
+let arrayDeNumeros = [];
 
+for (let index = 0; index < 25; index += 1) {
+  arrayDeNumeros.push(index+1);
+  // console.log(arrayDeNumeros[index]);
+}
+
+// console.log(arrayDeNumeros);
 
 //--- Exercicio 9 ---
+//Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+
+for (index = 0; index < arrayDeNumeros.length; index += 1) {
+  arrayDeNumeros[index] = arrayDeNumeros[index] / 2;
+  console.log(arrayDeNumeros[index]);
+}
