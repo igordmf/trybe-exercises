@@ -56,23 +56,35 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 //--- Exercicio 2 ---
+// let soma = 0;
+// for (index = 0; index < numbers.length; index += 1) {
+//   soma = soma + numbers[index];
+// }
+
+// console.log(soma);
+
+//--- Exercicio 3 ---
 let soma = 0;
 for (index = 0; index < numbers.length; index += 1) {
   soma = soma + numbers[index];
 }
+let media = soma / numbers.length;
 
-console.log(soma);
-
-//--- Exercicio 3 ---
+console.log(media);
 
 //--- Exercicio 4 ---
 
+
 //--- Exercicio 5 ---
+
 
 //--- Exercicio 6 ---
 
+
 //--- Exercicio 7 ---
 
+
 //--- Exercicio 8 ---
+
 
 //--- Exercicio 9 ---
