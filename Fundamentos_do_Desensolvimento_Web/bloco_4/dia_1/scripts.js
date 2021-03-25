@@ -280,27 +280,66 @@
 // console.log(eImpar(num1,num2,num3));
 
 // ***-Exercicio 10-***
-let valorCusto = 130;
-let valorVenda = 150;
-let quantidadeDeProdutos = 1000;
+// let valorCusto = 130;
+// let valorVenda = 150;
+// let quantidadeDeProdutos = 1000;
 
-let impostoSobreOCusto = 0.2 * valorCusto;
-let valorCustoTotal = valorCusto + impostoSobreOCusto;
+// let impostoSobreOCusto = 0.2 * valorCusto;
+// let valorCustoTotal = valorCusto + impostoSobreOCusto;
 
-function lucro(valorCustoTotal, valorVenda, quantidadeDeProdutos){
-  switch (true) {
-    case (valorCustoTotal < 0 || valorVenda < 0):
-      console.log('Valor inválido');
-      return 'Valor inválido';
-      break;
-    default:
-      let lucro = valorVenda * quantidadeDeProdutos - valorCustoTotal * quantidadeDeProdutos;
-      console.log('O lucro é de R$' + lucro + '.');
-      return lucro;
+// function lucro(valorCustoTotal, valorVenda, quantidadeDeProdutos){
+//   switch (true) {
+//     case (valorCustoTotal < 0 || valorVenda < 0):
+//       console.log('Valor inválido');
+//       return 'Valor inválido';
+//       break;
+//     default:
+//       let lucro = valorVenda * quantidadeDeProdutos - valorCustoTotal * quantidadeDeProdutos;
+//       console.log('O lucro é de R$' + lucro + '.');
+//       return lucro;
+//   }
+// }
+
+// lucro(valorCustoTotal, valorVenda, quantidadeDeProdutos);
+
+// ***-Exercicio 11-***
+
+let salarioBruto = 3000;
+let salarioLiquido;
+let salarioBase;
+let valorINSS;
+let valorIR;
+
+function calculaINSS ( salarioBruto ) {
+  if (salarioBruto < 1556.94) {
+      return 0.08*salarioBruto;
+  } else if (salarioBruto > 1556.95 && salarioBruto < 2594.92) {
+      return 0.09*salarioBruto;
+  } else if (salarioBruto > 2594.93 && salarioBruto < 5189.82) {
+      return 0.11*salarioBruto;
+  } else if (salarioBruto > 5189.82) {
+      return 570.88;
   }
 }
 
-lucro(valorCustoTotal, valorVenda, quantidadeDeProdutos);
+valorINSS = calculaINSS(salarioBruto);
+salarioBase = salarioBruto - valorINSS;
+console.log(salarioBase);
 
+function calculaIR (salarioBase) {
+  if ( salarioBase <= 1903.98 ) {
+    return 0;
+  } else if (salarioBase > 1.903,99 && salarioBase < 2826.65) {
+      return (0.075*salarioBase - 142.80);
+  } else if (salarioBase > 2826.66 && salarioBase < 3751.05) {
+      return (0.15*salarioBase - 354.80);
+  } else if (salarioBase > 3751.06 && salarioBase < 4664.68) {
+      return (0.225*salarioBase - 636.13);
+  } else if (salarioBase > 4664.68) {
+      return (0.275*salarioBase - 869.36);
+  }
+}
 
-// ***-Exercicio 11-***
+valorIR = calculaIR(salarioBase);
+salarioLiquido = salarioBase - valorIR;
+console.log(salarioLiquido);
