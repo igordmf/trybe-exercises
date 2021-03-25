@@ -265,21 +265,42 @@
 // console.log(ePar(num1,num2,num3));
 
 // ***-Exercicio 9-***
-let num1 = 4;
-let num2 = 2;
-let num3 = 6;
+// let num1 = 4;
+// let num2 = 2;
+// let num3 = 6;
 
-function eImpar (n1, n2, n3) {
-  if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function eImpar (n1, n2, n3) {
+//   if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 // console.log(eImpar(num1,num2,num3));
 
 // ***-Exercicio 10-***
+let valorCusto = 130;
+let valorVenda = 150;
+let quantidadeDeProdutos = 1000;
+
+let impostoSobreOCusto = 0.2 * valorCusto;
+let valorCustoTotal = valorCusto + impostoSobreOCusto;
+
+function lucro(valorCustoTotal, valorVenda, quantidadeDeProdutos){
+  switch (true) {
+    case (valorCustoTotal < 0 || valorVenda < 0):
+      console.log('Valor inválido');
+      return 'Valor inválido';
+      break;
+    default:
+      let lucro = valorVenda * quantidadeDeProdutos - valorCustoTotal * quantidadeDeProdutos;
+      console.log('O lucro é de R$' + lucro + '.');
+      return lucro;
+  }
+}
+
+lucro(valorCustoTotal, valorVenda, quantidadeDeProdutos);
 
 
 // ***-Exercicio 11-***
