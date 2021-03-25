@@ -250,21 +250,36 @@
 // document.getElementById("demo").innerHTML = nota + ': ' + conceito(nota);
 
 // ***-Exercicio 8-***
-let num1 = 3;
-let num2 = 3;
-let num3 = 5;
+// let num1 = 3;
+// let num2 = 3;
+// let num3 = 5;
 
-function ePar (n1, n2, n3) {
-  if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+// function ePar (n1, n2, n3) {
+//   if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(ePar(num1,num2,num3));
+
+// ***-Exercicio 9-***
+let num1 = 4;
+let num2 = 2;
+let num3 = 6;
+
+function eImpar (n1, n2, n3) {
+  if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
     return true;
   } else {
     return false;
   }
 }
 
-console.log(ePar(num1,num2,num3));
-// ***-Exercicio 9-***
+// console.log(eImpar(num1,num2,num3));
 
 // ***-Exercicio 10-***
+
 
 // ***-Exercicio 11-***
