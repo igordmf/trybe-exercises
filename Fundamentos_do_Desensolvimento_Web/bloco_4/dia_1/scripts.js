@@ -171,46 +171,83 @@
 // }
 
 // ***-Exercicio 6-***
-let pecaXadrez = prompt('Digite uma peça de Xadrez');
+// let pecaXadrez = prompt('Digite uma peça de Xadrez');
 // let pecaXadrez = 'REI'
-pecaXadrez = pecaXadrez.toLowerCase();
+// pecaXadrez = pecaXadrez.toLowerCase();
 
-function movimentos(pecaXadrez) {
-  switch (pecaXadrez) {
-    case 'rei':
-      console.log('O rei se movimenta para frente, trás e lados, podendo andar apenas uma casa.');
-      return 'O rei se movimenta para frente, trás e lados, podendo andar apenas uma casa.';
+// function movimentos(pecaXadrez) {
+//   switch (pecaXadrez) {
+//     case 'rei':
+//       console.log('O rei se movimenta para frente, trás e lados, podendo andar apenas uma casa.');
+//       return 'O rei se movimenta para frente, trás e lados, podendo andar apenas uma casa.';
+//       break;
+//     case 'dama':
+//       console.log('A dama se movimenta para frente, trás, lados e diagonal, podendo andar várias casas.');
+//       return 'A dama se movimenta para frente, trás, lados e diagonal, podendo andar várias casas.';
+//       break;
+//     case 'cavalo':
+//       console.log('O cavalo se movimenta em L.');
+//       return 'O cavalo se movimenta em L.';
+//       break;
+//     case 'bispo':
+//       console.log('O bispo se movimenta nas diagonais, podendo andar várias casas.');
+//       return 'O bispo se movimenta nas diagonais, podendo andar várias casas.';
+//       break;
+//     case 'torre':
+//       console.log('A torre se movimenta para frente, trás e lados, podendo andar várias casas.');
+//       return 'A torre se movimenta para frente, trás e lados, podendo andar várias casas.';
+//       break;
+//     case 'peao':
+//       console.log('O peao se movimenta para frente, trás e lados, podendo andar apenas uma casa.');
+//       return 'O peao se movimenta para frente, trás e lados, podendo andar apenas uma casa.';
+//       break;
+//     default:
+//       console.log('Essa peça não existe!');
+//       return 'Essa peça não existe!';
+//       break;
+//   }
+// }
+
+// document.getElementById("demo").innerHTML = pecaXadrez + ': ' + movimentos(pecaXadrez);
+
+// ***-Exercicio 7-***
+// let nota = 70;
+let nota = prompt('Digite sua nota entre 0 e 100.\n');
+
+function conceito(nota) {
+  switch (true) {
+    case (nota <= 100 && nota >= 90):
+      console.log('Sua nota tem conceito A. Parabéns!!');
+      return 'Sua nota tem conceito A. Parabéns!!';
       break;
-    case 'dama':
-      console.log('A dama se movimenta para frente, trás, lados e diagonal, podendo andar várias casas.');
-      return 'A dama se movimenta para frente, trás, lados e diagonal, podendo andar várias casas.';
+    case (nota < 90 && nota >= 80):
+      console.log('Sua nota tem conceito B. Muito bem!!');
+      return 'Sua nota tem conceito B. Muito bem!!';
       break;
-    case 'cavalo':
-      console.log('O cavalo se movimenta em L.');
-      return 'O cavalo se movimenta em L.';
+    case (nota < 80 && nota >= 70):
+      console.log('Sua nota tem conceito C. Aprovado!!');
+      return 'Sua nota tem conceito C. Aprovado!!';
       break;
-    case 'bispo':
-      console.log('O bispo se movimenta nas diagonais, podendo andar várias casas.');
-      return 'O bispo se movimenta nas diagonais, podendo andar várias casas.';
+    case (nota < 70 && nota >= 60):
+      console.log('Sua nota tem conceito D. Estude mais um pouco!!');
+      return 'Sua nota tem conceito D. Estude mais um pouco!!';
       break;
-    case 'torre':
-      console.log('A torre se movimenta para frente, trás e lados, podendo andar várias casas.');
-      return 'A torre se movimenta para frente, trás e lados, podendo andar várias casas.';
+    case (nota < 60 && nota >= 50):
+      console.log('Sua nota tem conceito E. Parabéns!!');
+      return 'Sua nota tem conceito E. Parabéns!!';
       break;
-    case 'peao':
-      console.log('O peao se movimenta para frente, trás e lados, podendo andar apenas uma casa.');
-      return 'O peao se movimenta para frente, trás e lados, podendo andar apenas uma casa.';
+    case (nota < 50):
+      console.log('Sua nota tem conceito F. Reprovado!!');
+      return 'Sua nota tem conceito F. Reprovado!!';
       break;
     default:
-      console.log('Essa peça não existe!');
-      return 'Essa peça não existe!';
+      console.log('Nota inválida!');
+      return 'Nota inválida!';
       break;
   }
 }
 
-document.getElementById("demo").innerHTML = pecaXadrez + ': ' + movimentos(pecaXadrez);
-
-// ***-Exercicio 7-***
+document.getElementById("demo").innerHTML = nota + ': ' + conceito(nota);
 
 // ***-Exercicio 8-***
 
