@@ -132,19 +132,81 @@
 
 //--- Exercicio 8 ---
 //Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
-let arrayDeNumeros = [];
+// let arrayDeNumeros = [];
 
-for (let index = 0; index < 25; index += 1) {
-  arrayDeNumeros.push(index+1);
+// for (let index = 0; index < 25; index += 1) {
+//   arrayDeNumeros.push(index+1);
   // console.log(arrayDeNumeros[index]);
-}
+// }
 
 // console.log(arrayDeNumeros);
 
 //--- Exercicio 9 ---
 //Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
 
-for (index = 0; index < arrayDeNumeros.length; index += 1) {
-  arrayDeNumeros[index] = arrayDeNumeros[index] / 2;
-  console.log(arrayDeNumeros[index]);
-}
+// for (index = 0; index < arrayDeNumeros.length; index += 1) {
+//   arrayDeNumeros[index] = arrayDeNumeros[index] / 2;
+//   console.log(arrayDeNumeros[index]);
+// }
+
+//--- Bônus ---
+let array = [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54];
+
+// for (let index = 0; index < array.length - 1; index += 1) {
+//   for (let secondIndex = 0; secondIndex < array.length - index - 1; secondIndex += 1) {
+//     if (array[index] > array[secondIndex]) {
+//       let position = array[index];
+//       array[index] = array[secondIndex];
+//       array[secondIndex] = position;
+//     }
+//   }
+// }
+
+//--- Parte 1 ---
+
+// let indexCount = 0;
+// while (indexCount < array.length) {
+//   for (let index = 0; index < array.length - indexCount; index += 1) {
+//     if (index < (array.length - indexCount - 1) && array[index] > array[index + 1]) {
+//       let position = array[index];
+//       array[index] = array[index + 1];
+//       array[index + 1] = position;
+//     }
+//   }
+//   indexCount += 1;
+// }
+
+// console.log(array);
+
+//--- Parte 2 ---
+
+// let indexCount = 0;
+// while (indexCount < array.length) {
+//   for (let index = 0; index < array.length - indexCount; index += 1) {
+//     if (index < (array.length - indexCount - 1) && array[index] < array[index + 1]) {
+//       let position = array[index];
+//       array[index] = array[index + 1];
+//       array[index + 1] = position;
+//     }
+//   }
+//   indexCount += 1;
+// }
+
+// console.log(array);
+
+//--- Parte 3 ---
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let array = [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54];
+// 3. Agora você irá criar um novo array a partir do array numbers , sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push . O resultado deve ser o array abaixo:
+
+// let novoArray = [];
+
+let novoArray = numbers.map((number,index) => number * (numbers[index + 1] || 2));
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (index == numbers.length -1) {
+//     novoArray.push(numbers[index] * 2);
+//   } else {
+//     novoArray.push(numbers[index] * numbers[index + 1]);
+//   }
+// }
+console.log(novoArray);
