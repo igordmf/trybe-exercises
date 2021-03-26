@@ -1,0 +1,19 @@
+//--- Exercicio 1 ---
+
+let n = 2;
+let stringDeAst = '';
+
+for (let i = 1; i <= n; i += 1) {
+  for (let j = 1; j <= n; j += 1) {
+    stringDeAst = stringDeAst + '*';
+  }
+  console.log(stringDeAst);
+  stringDeAst = '';
+}
+
+//--- Exercicio 2 ---
+
+
+//--- Exercicio 3 ---
+
+//--- Exercicio 4 ---
