@@ -96,8 +96,12 @@ for (divisor = 2; divisor < ePrimo; divisor += 1) {
   }
 }
 
+divisores.push(ePrimo);
+
 if (divisores.length === 0) {
   console.log('O numero ' + ePrimo + ' é um número primo.');
 } else {
   console.log('O numero ' + ePrimo + ' não é um número primo.');
 }
+
+console.log('Seus divisores são: ' + divisores);
