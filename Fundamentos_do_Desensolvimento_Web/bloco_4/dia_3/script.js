@@ -1,15 +1,15 @@
 //--- Exercicio 1 ---
 
-// let n = 2;
-// let stringDeAst = '';
+let n = 2;
+let stringDeAst = '';
 
-// for (let i = 1; i <= n; i += 1) {
-//   for (let j = 1; j <= n; j += 1) {
-//     stringDeAst = stringDeAst + '*';
-//   }
-//   console.log(stringDeAst);
-//   stringDeAst = '';
-// }
+for (let i = 1; i <= n; i += 1) {
+  for (let j = 1; j <= n; j += 1) {
+    stringDeAst = stringDeAst + '*';
+  }
+  console.log(stringDeAst);
+  stringDeAst = '';
+}
 
 //--- Exercicio 2 ---
 
@@ -87,21 +87,21 @@
 
 //--- Exercicio 6 ---
 
-let ePrimo = 17781;
-let divisores = [1];
+// let ePrimo = 17781;
+// let divisores = [1];
 
-for (divisor = 2; divisor < ePrimo; divisor += 1) {
-  if (ePrimo % divisor === 0) {
-    divisores.push(divisor);
-  }
-}
+// for (divisor = 2; divisor < ePrimo; divisor += 1) {
+//   if (ePrimo % divisor === 0) {
+//     divisores.push(divisor);
+//   }
+// }
 
-divisores.push(ePrimo);
+// divisores.push(ePrimo);
 
-if (divisores.length === 0) {
-  console.log('O numero ' + ePrimo + ' é um número primo.');
-} else {
-  console.log('O numero ' + ePrimo + ' não é um número primo.');
-}
+// if (divisores.length === 0) {
+//   console.log('O numero ' + ePrimo + ' é um número primo.');
+// } else {
+//   console.log('O numero ' + ePrimo + ' não é um número primo.');
+// }
 
-console.log('Seus divisores são: ' + divisores);
+// console.log('Seus divisores são: ' + divisores);
