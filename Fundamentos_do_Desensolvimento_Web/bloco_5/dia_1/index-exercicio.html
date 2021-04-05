@@ -51,9 +51,25 @@
         5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       document.getElementsByTagName('p')[0].innerText = 'Maaaluco';
-       document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+      document.getElementsByTagName('p')[0].innerText = 'Maaaluco';
+      document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+      document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+      document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
 
+      function paragrafoMaiusculo(element) {
+        for (let index = 0; index < document.getElementsByTagName(element).length; index += 1){
+          let string = document.getElementsByTagName(element)[index].innerText;
+          document.getElementsByTagName(element)[index].innerText = string.toUpperCase();
+        }
+      }
+      paragrafoMaiusculo('p');
+
+      function showParagraphContent(element) {
+        for (let index = 0; index < document.getElementsByTagName(element).length; index += 1) {
+          console.log(document.getElementsByTagName(element)[index].innerText);
+        }
+      }
+      showParagraphContent('p');
     </script>
   </body>
 </html>
