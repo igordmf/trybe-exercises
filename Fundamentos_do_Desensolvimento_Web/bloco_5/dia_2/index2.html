@@ -117,7 +117,12 @@
       //3.
       mainContent.removeChild(leftContent);
       //4.
-      console.log(document.getElementsByClassName('right-content')[0].style.margin-right = 'auto');
+      document.getElementsByClassName('right-content')[0].style.marginRight = 'auto';
+      //5.
+      document.getElementsByClassName('center-content')[0].parentElement.style.backgroundColor = 'green';
+      //6.
+      document.getElementsByClassName('right-content')[0].firstElementChild.lastElementChild.remove();
+      document.getElementsByClassName('right-content')[0].firstElementChild.lastElementChild.remove();
     </script>
   </body>
 </html>
