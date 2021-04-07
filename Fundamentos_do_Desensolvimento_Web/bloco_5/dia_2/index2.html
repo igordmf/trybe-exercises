@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //1.
+      let body = document.getElementsByTagName('body');
+      let h1 = document.createElement('h1');
+      h1.setAttribute('id', 'aga1');
+      h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      body[0].appendChild(h1);
+      //2.
+      let mainContent = document.createElement('div');
+      mainContent.classList.add('main-content');
+      body[0].appendChild(mainContent);
+      //3.
+      let centerContent = document.createElement('div');
+      centerContent.classList.add('center-content');
+      mainContent.appendChild(centerContent);
+      //4.
+      let p = document.createElement('p');
+      p.innerText = 'Texto paragrafo';
+      centerContent.appendChild(p);
+      //5.
+      let leftContent = document.createElement('div');
+      leftContent.classList.add('left-content');
+      mainContent.appendChild(leftContent);
+      //6.
+      let rightContent = document.createElement('div');
+      rightContent.classList.add('right-content');
+      mainContent.appendChild(rightContent);
+      //7.
+      let imgLeftContent = document.createElement('img');
+      imgLeftContent.classList.add('small-image');
+      imgLeftContent.setAttribute('src', 'https://picsum.photos/200');
+      leftContent.appendChild(imgLeftContent);
+      //8.
+      let ulList = document.createElement('ul');
+      const numList = 10;
+      for (let index = 1; index <= numList; index += 1) {
+        let listItem = document.createElement('li');
+        let text = index.toString();
+        listItem.innerText = text;
+        ulList.appendChild(listItem);
+      }
+      rightContent.appendChild(ulList);
+      //9.
+      const NumOfh3Tags = 3;
+      for (index = 1; index <= NumOfh3Tags; index += 1) {
+        let h3 = document.createElement('h3');
+        let text = "h3 " + index.toString();
+        h3.innerText = text;
+        mainContent.appendChild(h3);
+      }
+
+      //1.
+      h1.classList.add('title');
+      //2.
+      let h3Tags = document.getElementsByTagName('h3');
+      for (let index =0; index < h3Tags.length; index += 1) {
+        h3Tags[index].classList.add('description');
+      }
+      //3.
+      mainContent.removeChild(leftContent);
+      //4.
+      document.getElementsByClassName('right-content')[0].style.marginRight = 'auto';
+      //5.
+      document.getElementsByClassName('center-content')[0].parentElement.style.backgroundColor = 'green';
+      //6.
+      document.getElementsByClassName('right-content')[0].firstElementChild.lastElementChild.remove();
+      document.getElementsByClassName('right-content')[0].firstElementChild.lastElementChild.remove();
+    </script>
+  </body>
+</html>
