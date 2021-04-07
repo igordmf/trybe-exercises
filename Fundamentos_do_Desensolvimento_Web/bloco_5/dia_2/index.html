@@ -28,6 +28,21 @@
     console.log(document.getElementById('elementoOndeVoceEsta').nextSibling.textContent = 'atencao');
     console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
     console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
+
+    let pai = document.getElementById('pai');
+    let irmaoDoElementoOndeVoceEsta = document.createElement('div');
+    irmaoDoElementoOndeVoceEsta.setAttribute('id', 'irmaoDoElementoOndeVoceEsta');
+    pai.appendChild(irmaoDoElementoOndeVoceEsta);
+
+    let filhoDoElementoOndeVoceEsta = document.createElement('div');
+    filhoDoElementoOndeVoceEsta.setAttribute('id', 'filhoDoElementoOndeVoceEsta');
+    document.getElementById('elementoOndeVoceEsta').appendChild(filhoDoElementoOndeVoceEsta);
+
+    let filhoDoprimeiroFilhoDoFilho = document.createElement('div');
+    filhoDoprimeiroFilhoDoFilho.setAttribute('id', 'filhoDoprimeiroFilhoDoFilho');
+    document.getElementById('primeiroFilhoDoFilho').appendChild(filhoDoprimeiroFilhoDoFilho);
+
+    console.log(document.getElementById('filhoDoprimeiroFilhoDoFilho').parentElement.parentElement.nextSibling.nextSibling);
   </script>
 </body>
 </html>
