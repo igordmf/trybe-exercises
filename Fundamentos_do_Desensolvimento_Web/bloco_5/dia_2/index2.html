@@ -80,6 +80,26 @@
       leftContent.classList.add('left-content');
       mainContent.appendChild(leftContent);
       //6.
+      let rightContent = document.createElement('div');
+      rightContent.classList.add('right-content');
+      mainContent.appendChild(rightContent);
+      //7.
+      let imgLeftContent = document.createElement('img');
+      imgLeftContent.classList.add('small-image');
+      imgLeftContent.setAttribute('src', 'https://picsum.photos/200');
+      leftContent.appendChild(imgLeftContent);
+      //8.
+      let ulList = document.createElement('ul');
+      const numList = 10;
+      for (let index = 1; index <= numList; index += 1) {
+        let listItem = document.createElement('li');
+        let text = index.toString();
+        listItem.innerText = text;
+        ulList.appendChild(listItem);
+      }
+      rightContent.appendChild(ulList);
+      //9.
+      
     </script>
   </body>
 </html>
