@@ -91,9 +91,10 @@
       //8.
       let ulList = document.createElement('ul');
       const numList = 10;
-      for (let index = 1; index <= numList; index += 1) {
+      let arrayList = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index = 0; index < arrayList.length; index += 1) {
         let listItem = document.createElement('li');
-        let text = index.toString();
+        let text = arrayList[index];
         listItem.innerText = text;
         ulList.appendChild(listItem);
       }
