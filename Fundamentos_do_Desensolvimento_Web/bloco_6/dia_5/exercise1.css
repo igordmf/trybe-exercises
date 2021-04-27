@@ -1,0 +1,32 @@
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  img {
+    padding: 2px
+  }
+}
